@@ -1,0 +1,95 @@
+img.cropped.bordered { 
+    width: 99%;
+    height: auto;  
+}
+img.bordered {
+    border: 1px solid #666;
+}
+
+
+      a span { color: #888; }
+	 	 
+                a.action-button {
+                    text-align: center;
+                    padding: .3em .3em .3em .3em;
+                    font-weight: bold;
+                    border: 2px solid #821122 !important;
+                    display: block;
+                    -moz-border-radius: 10px;
+                    border-radius: 10px;
+                    font-family: "Gotham SSm A", "Gotham SSm B";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: .9em;
+                    margin: 0 auto;
+                }
+                a.action-button.monthly {
+                  background: #ffffff;
+                  border: 2px solid #821122 !important;
+                  max-width: 270px !important;
+                }
+                a.action-button.annual {
+                  background: #821122;
+                  color: #ffffff;
+                  max-width: 270px !important;
+                }
+                
+                a.action-button:hover {
+                    background: #a0152a;
+                    color: #fff;
+                    /*border: none;*/
+                }
+                
+
+.clr { clear: both; }
+.img-left, .imgleft, .alignleft { float:left; margin:5px 25px 13px 0;}
+.img-right, .imgright, .alignright { float:right; margin:5px 0 13px 25px;}
+.centered { text-align: center; }
+  .centered img { margin: 0 auto; }
+
+  blockquote, q {
+    quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+    .feature-div{
+        margin: 3rem 1rem; 
+        background: white;
+        border-radius: 12px;
+      }
+      .feature-div-head{
+      border-bottom: 2px solid #f1f1f1;;
+       }
+      
+       .feature-div-content img{
+        width: 100%;
+      
+        vertical-align: middle;
+        
+        height: 25rem;
+       }
+
+       .archive .column.alpha    { margin-left: 0; }
+
+       .breakout {
+        border-top: 3px solid #000;
+        border-bottom: 3px solid #000;
+        margin: 35px 0 35px 0;
+        padding: 15px 0 17px 0;
+        font-family: "Gotham SSm A", "Gotham SSm B";
+        font-weight: 400;
+        font-style: italic;
+        font-size: 14px;
+    }
+   
+        .courseindex a {
+            border: none;
+        }
+
+        
+        .archive .column.omega    { margin-right: 0; }

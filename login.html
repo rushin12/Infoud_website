@@ -1,0 +1,152 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+<title>
+Login page
+</title>
+
+
+<style>
+
+.navbar {
+  font-size: 18px;
+  color:black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,.nav-links:hover
+
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.car
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color:#e74c3c;
+  font-size: 16px;
+}
+.navbar-toggle:hover{
+  background-color: #e74c3c;
+  color:white;
+}
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+
+  .navbar-toggle {
+    display: none;
+  }
+
+</style>
+<body>
+
+    <header>
+                <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+                <link rel="manifest" href="img/favicon/site.webmanifest">
+                <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+                <meta name="msapplication-TileColor" content="#da532c">
+                <meta name="theme-color" content="#ffffff">
+            
+            
+
+    <nav class="navbar navbar-inverse">
+            
+        <span class="navbar-toggle" id="js-navbar-toggle">
+                <i  class="fa fa-bars"></i>
+            </span>
+        <a href="index.html"  style="border-radius: 0%;font-size: 30px;font-style: italic; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:yellow;" height="50" >InfoUD</a>
+      
+      
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links" style="color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</a>
+          </li>
+          <li>
+            <a href="login.html" class="nav-links" style="color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Log In</a>
+          </li>
+          <li>
+            <a href="registration.html" class="nav-links" style="color:whitesmoke;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";>Sign Up</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links" style="color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Contact Us</a>
+          </li>
+        </ul>
+      
+      </nav>
+<h1 style="font-family:Comic Sans Ms;text-align: center;color:#00FF00">
+Simple Login Page
+</h1>
+<form name="login">
+Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+<button value="Login" id="submit" onclick="check(form);">Login</button>
+
+<input type="reset" value="Cancel"/>
+</form>
+
+<script language="javascript">
+        function check(form)
+        {
+         if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+          {
+            alert("Successfully Logged In")
+
+            window.open('index.html')
+          }
+         else
+         {
+           alert("Error Password or Username")
+          }
+          
+        }
+        </script>
+</body>
+
+
+        
+</html>
+
