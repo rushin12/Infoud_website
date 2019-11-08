@@ -1,7 +1,10 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -10,88 +13,80 @@
 Login page
 </title>
 
-
 <style>
-
-.navbar {
-  font-size: 18px;
-  color:black;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links,.nav-links:hover
-
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.car
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color:#e74c3c;
-  font-size: 16px;
-}
-.navbar-toggle:hover{
-  background-color: #e74c3c;
-  color:white;
-}
-.active {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-
-  .navbar-toggle {
-    display: none;
-  }
+ body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          .container {
+            position: relative;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px 0 30px 0;
+          } 
+          
+       
+          input,
+          .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px 0;
+            opacity: 0.85;
+            display: inline-block;
+            font-size: 17px;
+            line-height: 20px;
+            text-decoration: none; 
+          }
+          
+          input:hover,
+          .btn:hover {
+            opacity: 1;
+          }
+        
+          input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+        
+          .hide-md-lg {
+            display: none;
+          }
+          
+   
+          .bottom-container {
+            text-align: center;
+            background-color: #666;
+            border-radius: 0px 0px 4px 4px;
+          }
+          
+          @media screen and (max-width: 650px) {
+            .col {
+              width: 100%;
+              margin-top: 0;
+            }
+            .vl {
+              display: none;
+            }
+            .hide-md-lg {
+              display: block;
+              text-align: center;
+            }
+          }
 
 </style>
 <body>
 
     <header>
-                <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
-                <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-                <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-                <link rel="manifest" href="img/favicon/site.webmanifest">
-                <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-                <meta name="msapplication-TileColor" content="#da532c">
-                <meta name="theme-color" content="#ffffff">
-            
-            
 
     <nav class="navbar navbar-inverse">
             
@@ -117,36 +112,45 @@ Login page
         </ul>
       
       </nav>
-<h1 style="font-family:Comic Sans Ms;text-align: center;color:#00FF00">
-Simple Login Page
-</h1>
-<form name="login">
-Username<input type="text" name="userid"/>
-Password<input type="password" name="pswrd"/>
-<button value="Login" id="submit" onclick="check(form);">Login</button>
-
-<input type="reset" value="Cancel"/>
-</form>
-
+      
+      <h2>Please Enter all the details to Login</h2>
+      
+      <div class="container">
+        <form>
+      
+              <input type="text" name="userid" placeholder="userId" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" onclick="check()" value="Login">
+            </div>
+        
+        </form>
+      </div>
+      
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a href="#" style="color:white" class="btn">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+      
 <script language="javascript">
-        function check(form)
+        function check()
         {
-         if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
-          {
-            alert("Successfully Logged In")
+        //  if(userid.value == "myuserid" && password.value == "mypswrd")
+        //  {
+             alert("Successfully Logged In")
 
             window.open('index.html')
-          }
-         else
-         {
-           alert("Error Password or Username")
-          }
+        //   }
+        //  else
+        //  {
+          //  alert("Error Password or Username")
+           }
           
-        }
+        //  }
         </script>
-</body>
-
-
-        
+    
+    </body>
 </html>
 

@@ -4,6 +4,10 @@
     
   <title>Infoud Website</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,41 +24,9 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
+   ;
 }
 
-.navbar {
-  font-size: 18px;
-  color:black;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links,.nav-links:hover
-
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.car
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color:#e74c3c;
-  font-size: 16px;
-}
-.navbar-toggle:hover{
-  background-color: #e74c3c;
-  color:white;
-}
 .active {
   display: block;
 }
@@ -73,43 +45,12 @@ font-size: medium;
 background-color:turquoise;
 color: black;
 
-
 }
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-
-  .navbar-toggle {
-    display: none;
-  }
 
   .item.img{
     width:100%;
     height:500px;
   }
-}
 
 </style>
 <body>
@@ -120,7 +61,7 @@ color: black;
                     <span class="navbar-toggle" id="js-navbar-toggle">
                             <i  class="fa fa-bars"></i>
                         </span>
-                    <a href="index.html"  style="border-radius: 0%;font-size: 30px;font-style: italic; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:yellow;" height="50" >InfoUD</a>
+                    <a href="index.html"  style="border-radius: 0%;font-size: 30px;text-align: left; font-style: italic; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:yellow;" height="50" >InfoUD</a>
                   
                   
                     <ul class="main-nav" id="js-menu">
@@ -143,6 +84,39 @@ color: black;
                     </ul>
                   
                   </nav>
+
+                  <div class="homeimage">
+
+                    <img src="apple.jpeg" style="width: 100%;">
+                    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+                  </div> 
+
+                  <div class="w3-container" style="padding:128px 16px" id="about">
+                      <h3 class="w3-center">ABOUT THE COMPANY</h3>
+                      <p class="w3-center w3-large">Key features of our company</p>
+                      <div class="w3-row-padding w3-center" style="margin-top:64px">
+                        <div class="w3-quarter">
+                          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                          <p class="w3-large">Responsive</p>
+                          <p>All Our Products and Software are Responsive in Nature.</p>
+                        </div>
+                        <div class="w3-quarter">
+                          <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                          <p class="w3-large">Passion</p>
+                          <p>Our Passion Towards our Work is the key feature of our Company</p>
+                        </div>
+                        <div class="w3-quarter">
+                          <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                          <p class="w3-large">Design</p>
+                          <p>Our team helps us to make some good designs for your software and projects.</p>
+                        </div>
+                        <div class="w3-quarter">
+                          <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                          <p class="w3-large">Support</p>
+                          <p>Our Customer Support team is available for you for end to end assistance.You just have to tap the Contact Us button in the navingation bar.</p>
+                        </div>
+                      </div>
+                    </div>
             
             
 
@@ -163,7 +137,7 @@ color: black;
       </div>
 
       <div class="item">
-        <img src="data.jpeg" alt="Chicago" style="width:100%;">
+        <img src="box1.png" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
@@ -184,20 +158,20 @@ color: black;
 </div>
 
 
-<div class="row"  style="background:#f1f1f1;;"> 
+<div class="row"> 
 
   <div class="col col-md-3">
     <div class="feature-div"> 
-    <div class="feature-div-head"  >
+    <div class="feature-div-head">
     <br>
       <div class="title"> Build Your Own Code </div>
       <a href="www.google.com"></a>
     </div>
     <br>
     <br>
-    <div class="feature-div-content"  >
+    <div class="feature-div-content" style="padding-left: 41px;" >
      
-     <img src="box1.jpeg " style="height:276px; width: 100%;">
+     <img src="data.png" style="height:276px; width: 100%;">
       
     </div>
   </div>     
@@ -249,28 +223,6 @@ color: black;
 
 </body>
 
-<footer class="page-footer font-small special-color-dark pt-4">
 
-    <!-- Footer Elements -->
-    <div class="container" >
-  
-  
-    <!-- Copyright -->
-    <br>
-    <br>
-    <div class="footer-copyright text-center py-3" 
-    
-    >� 2019 Copyright:
-      <a href="index.html"> InfoUD.com</a>
-      <br>
-      <br>
-      <br>
-      <br>
-
-    </div>
-    <!-- Copyright -->
-  
-  </div>
-</footer>
 </html>
 

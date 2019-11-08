@@ -2,6 +2,8 @@
 <html>
 <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -9,68 +11,6 @@
 
       </head>
 <style>
-
-.navbar {
-  font-size: 18px;
-  color:black;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links,.nav-links:hover
-
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color:#e74c3c;
-  font-size: 16px;
-}
-.navbar-toggle:hover{
-  background-color: #e74c3c;
-  color:white;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .main-nav li {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 40px;
-  }
-
-
-  .navbar-toggle {
-    display: none;
-  }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -131,7 +71,7 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
-}
+
 </style>
 </head>
 <body>
@@ -196,38 +136,37 @@ a {
 </form>
 
 <script>
-function check() {
-    var firstName1 = document.getElementById("firstName").value;
-    var lastName1 = document.getElementById("lastName").value;
-    var email1 = document.getElementById("email").value;
-    var userid1 = document.getElementById("userid").value;
-    var psw1 = document.getElementById("psw").value;
+function check() 
+{
+    // var firstName1 = document.getElementById("firstName").value;
+    // var lastName1 = document.getElementById("lastName").value;
+    // var email1 = document.getElementById("email").value;
+    // var userid1 = document.getElementById("userid").value;
+    // var psw1 = document.getElementById("psw").value;
    
-
-   
-    if (firstName1 == null || firstName1 == "") {
-        alert("Please enter the username.");
-        return false;
-    }
-    if (lastName1 == null || lastName1 == "") {
-        alert("Please enter the password.");
-        return false;
-    }
-    if (email1 == null || email1 == "") {
-        alert("Please enter the username.");
-        return false;
-    } if (userid1 == null || userid1 == "") {
-        alert("Please enter the username.");
-        return false;
-    } if (psw1 == null || psw1 == "") {
-        alert("Please enter the username.");
-        return false;
+    // if (firstName1 == null || firstName1 == "") {
+    //     alert("Please enter the username.");
+    //     return false;
+    // }
+    // if (lastName1 == null || lastName1 == "") {
+    //     alert("Please enter the password.");
+    //     return false;
+    // }
+    // if (email1 == null || email1 == "") {
+    //     alert("Please enter the username.");
+    //     return false;
+    // } if (userid1 == null || userid1 == "") {
+    //     alert("Please enter the username.");
+    //     return false;
+    // } if (psw1 == null || psw1 == "") {
+    //     alert("Please enter the username.");
+    //     return false;
   
-    }
-    else{
-    alert('Login successful');
-    }
-}
+    // }
+    // else{
+    alert('Payment successful');
+     }
+//  }
 </script>
 </body>
 </html>

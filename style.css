@@ -1,3 +1,87 @@
+
+/* Navigation Bar Styling of All Pages */
+
+.navbar {
+    font-size: 18px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.nav-links:hover .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.car .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 16px;
+}
+
+.navbar-toggle:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.active {
+    display: block;
+}
+
+.feature-div {
+    margin: 3rem 1rem;
+    background: white;
+    border-radius: 12px;
+}
+
+.feature-div-head {
+    border-bottom: 2px solid #f1f1f1;
+    ;
+}
+
+.feature-div-content img {
+    width: 100%;
+    vertical-align: middle;
+    height: 25rem;
+    padding-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+}
+
+
+/* Membership Page Styling */
+
 img.cropped.bordered { 
     width: 99%;
     height: auto;  
@@ -5,8 +89,6 @@ img.cropped.bordered {
 img.bordered {
     border: 1px solid #666;
 }
-
-
       a span { color: #888; }
 	 	 
                 a.action-button {
@@ -25,18 +107,18 @@ img.bordered {
                 }
                 a.action-button.monthly {
                   background: #ffffff;
-                  border: 2px solid #821122 !important;
+                  border: 2px solid maroon !important;
                   max-width: 270px !important;
                 }
                 a.action-button.annual {
-                  background: #821122;
-                  color: #ffffff;
+                  background: maroon;
+                  color: white;
                   max-width: 270px !important;
                 }
                 
                 a.action-button:hover {
-                    background: #a0152a;
-                    color: #fff;
+                    background: maroon;
+                    color: white;
                     /*border: none;*/
                 }
                 
@@ -57,6 +139,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0; }
 
+/* 4 Div On Home Page Styling */
+
     .feature-div{
         margin: 3rem 1rem; 
         background: white;
@@ -74,11 +158,13 @@ table {
         height: 25rem;
        }
 
+
+       /* Membership Page Styling */
        .archive .column.alpha    { margin-left: 0; }
 
        .breakout {
-        border-top: 3px solid #000;
-        border-bottom: 3px solid #000;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
         margin: 35px 0 35px 0;
         padding: 15px 0 17px 0;
         font-family: "Gotham SSm A", "Gotham SSm B";
@@ -91,5 +177,87 @@ table {
             border: none;
         }
 
-        
         .archive .column.omega    { margin-right: 0; }
+
+/* Contact page Styling */
+
+        *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}    
+		
+		.main{
+			width: 500px;
+			margin: 50px auto;
+			border-radius: 10px;
+			border: 5px solid white ;
+			border-left: 15px solid white;
+			box-shadow: 1px 2px 10px black;
+		}
+		.info{
+			width: 100%;
+			background-color: white;
+			padding: 7px;
+			text-shadow: 1px 1px 1px;
+			color: black;
+			font-size: 20px;
+		}
+		.form-box{
+			padding: 20px;
+			background-color:white;
+
+		}
+		label{
+			color: black;
+			font-size: 18px;
+		}
+		.inp,.msg-box{
+			width: 100%;
+			padding: 10px;
+			margin-top: 4px;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			border: 2px solid black;
+			font-weight: bold;
+			color: black;
+			resize: none;
+		}
+		.msg-box{
+			height: 80px;
+		}
+		.inp:focus,.msg-box:focus{
+			outline: none;
+			border: 2px solid navy;
+			border-right: 15px solid navy;
+			border-left: 15px solid  navy;
+		}
+		.sub-btn{
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			margin-top: 5px;
+			border: none;
+			background:black;
+			cursor: pointer;
+			color: white;
+			font-size: 20px;
+			text-shadow: 1px 1px 1px black;
+		}
+		.sub-btn:hover{
+			opacity: 0.8;
+			transition: all ease-out 0.2s;
+		}
+		.sub-btn:focus{
+			outline: none;
+		}
+		@media(max-width: 720px){
+			.main{
+				width: 90%;
+			}
+        }
+        
+        
+
+       

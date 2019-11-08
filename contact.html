@@ -5,98 +5,63 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Feedback Form</title>
 	<link rel="stylesheet" href="css/bootstrap.css" >
-    <link rel="stylesheet" href="css/style.css">
-	<script src="js/jQuery.js"></script>
-	<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<style type="text/css" media="screen">
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-			font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-		}    
-		body{
-			background-image: url("contact.jpeg");
-		
-		}
-		.main{
-			width: 500px;
-			margin: 50px auto;
-			border-radius: 10px;
-			border: 5px solid white ;
-			border-left: 15px solid white;
-			box-shadow: 1px 2px 10px black;
-		}
-		.info{
-			width: 100%;
-			background-color: white;
-			padding: 7px;
-			text-shadow: 1px 1px 1px;
-			color: black;
-			font-size: 20px;
-		}
-		.form-box{
-			padding: 20px;
-			background-color:white;
 
-		}
-		label{
-			color: black;
-			font-size: 18px;
-		}
-		.inp,.msg-box{
-			width: 100%;
-			padding: 10px;
-			margin-top: 4px;
-			margin-bottom: 5px;
-			border-radius: 5px;
-			border: 2px solid black;
-			font-weight: bold;
-			color: black;
-			resize: none;
-		}
-		.msg-box{
-			height: 80px;
-		}
-		.inp:focus,.msg-box:focus{
-			outline: none;
-			border: 2px solid navy;
-			border-right: 15px solid navy;
-			border-left: 15px solid  navy;
-		}
-		.sub-btn{
-			width: 100%;
-			padding: 10px;
-			border-radius: 5px;
-			margin-top: 5px;
-			border: none;
-			background:black;
-			cursor: pointer;
-			color: white;
-			font-size: 20px;
-			text-shadow: 1px 1px 1px black;
-		}
-		.sub-btn:hover{
-			opacity: 0.8;
-			transition: all ease-out 0.2s;
-		}
-		.sub-btn:focus{
-			outline: none;
-		}
-		@media(max-width: 720px){
-			.main{
-				width: 90%;
-			}
-		}
+body{
+			background-image: url("contact.jpeg");
+		    width: 100%;
+		}	
 	</style>
 </head>
 <body>
-		<div id="header">
 
-			</div>
+		<header>
+
+        <nav class="navbar navbar-inverse">
+
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </span>
+            <a href="index.html"
+                style="border-radius: 0%;font-size: 30px;font-style: italic; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:yellow;"
+                height="50">InfoUD</a>
+
+
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="index.html" class="nav-links"
+                        style="color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</a>
+                </li>
+                <li>
+                    <a href="login.html" class="nav-links"
+                        style="color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Log
+                        In</a>
+                </li>
+                <li>
+                    <a href="registration.html" class="nav-links"
+                        style="color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+                        ;>Sign Up</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-links"
+                        style="color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Contact
+                        Us</a>
+                </li>
+
+                <li>
+                    <a href="membership.html" class="nav-links"
+                        style="color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Membership</a>
+                </li>
+            </ul>
+
+        </nav>
+	
 	<div class="main">
 		<div class="info" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight:500; font-size: 30px;">GET IN TOUCH </div>
-		<form action="contact.php" method="post" name="form" class="form-box">
+		<form action="" method="post" name="form" class="form-box">
 			<label for="name">Name</label><br>
 			<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
 			<label for="email">Email ID</label><br>
@@ -105,21 +70,43 @@
 			<input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br>
 			<label for="message">Message</label><br>
 			<textarea name="msg" class="msg-box" placeholder="Enter Your Message Here..." required></textarea><br>
-			<input type="submit" name="submit" value="Send" class="sub-btn">
+			<input type="submit" name="submit" onclick="check()" value="Send" class="sub-btn">
 		</form>
 	</div>
-	<div id="footer">
 
-		</div>
 </body>
-</html> 
+<script>
 
-<script src="js/jQuery.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script>
-  $(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
- 
-});
-  </script>
+function check() {
+
+   // var name1 = document.getElementById("name").value;
+    // var email1 = document.getElementById("email").value;
+    // var phone1 = document.getElementById("phone").value;
+
+
+
+    // if name1 == null || name1 == "") {
+    //     alert("Please enter the username.");
+    //     return false;
+    // }
+    // if (email1 == null || email1 == "") {
+    //     alert("Please enter the password.");
+    //     return false;
+    // }
+    // if (phone1 == null || phone1 == "") {
+    //     alert("Please enter the username.");
+    //     return false;
+   
+    //     alert("Please enter the Name.");
+    //     return false;
+    // }
+    
+    alert('Thank you for contacting us. Our team will in touch with you shortly');
+    
+}
+
+
+
+</script>
+
+</html> 
